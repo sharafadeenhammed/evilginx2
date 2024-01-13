@@ -816,6 +816,7 @@ func NewHttpProxy(hostname string, port int, cfg *Config, crt_db *CertDb, db *da
 				"X-XSS-Protection",
 				"X-Content-Type-Options",
 				"X-Frame-Options",
+				"X-Evilginx",
 			}
 			for _, hdr := range rm_headers {
 				resp.Header.Del(hdr)
